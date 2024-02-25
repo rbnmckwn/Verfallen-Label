@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    font-size: 12px;
+    cursor: crosshair;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    background-color: white;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 80%;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-weight: normal;
+
+}
+
+li {
+    width: fit-content;
+}
+
+.cat-numbers {
+    list-style-type: none;
+    padding-left: 0;
+    width: fit-content;
+
+}
+
+.cat-numbers>li:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.definition-box {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    max-height: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 0 auto;
+
+}
+
+#german-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+}
+
+button {
+    text-align: left;
+    padding: 0;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    color: black;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    width: fit-content;
+}
+
+#english-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: none;
+}
+
+
+#random-term {
+    filter: blur();
+
+}
+
+#website-will-rot {
+    display: block;
+}
+
+/*release page*/
+
+#release-box {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    max-height: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 0 auto;
+
+}
+
+.qr {
+    width: 15%;
+    height: 15%;
+
+}
+
+.release-box-image-vf1 {
+    background-image: url(vf_01_40\ weapon.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+
+}
+
+.release-box-image-vf2 {
+    background-image: url(vf_02_40\ weapon.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 10%;
+
+}
+
+.release-box-image-vf3 {
+    background-image: url(vf_03_25\ weapon.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+
+}
+
+#description-list {
+    list-style-type: none;
+    padding-left: 0;
+    filter: blur(2px);
+
+}
+
+#image-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+}
+
+#image-scans {
+    width: 100%;
+    height: 100%;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 1300px) and (max-height: 1366px) {
+    body {
+        background-size: cover;
+        
+    
+    }
+}
+
+@media screen and (max-width: 390px) and (max-height: 844px) {
+
+    body {
+        background-size: cover;
+        
+    
+    }
+
+    .definition-box {
+        width: 80%;
+        max-height: 50%;
+
+    }
+
+    #release-box {
+        width: 80%;
+        max-height: 50%;
+
+    }
+
+    .qr {
+        width: 20%;
+        height: 20%;
+
+    }
+
+    .release-box-image-vf1 {
+        background-size: 40%;
+
+    }
+
+    .release-box-image-vf2 {
+        background-size: 23%;
+
+    }
+
+    .release-box-image-vf3 {
+        background-size: 50%;
+
+    }
+
+    #image-box {
+        width: 100%;
+    }
+}
